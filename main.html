@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb Movie Detail Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1c1c1c, #2c2c2c);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        /* Movie Poster */
+        .moviePic {
+            height: 500px;
+            width: 350px;
+            opacity: 0.95;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .moviePic:hover {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        /* Movie Description */
+        .movieDetail {
+            position: relative;
+            top: 30px;
+            width: 80%;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Optional: Add a title above poster */
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1>Inception (2010)</h1>
+    <img src="https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_.jpg" alt="Inception Poster" class="moviePic">
+    <p class="movieDetail">
+        A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO. 
+        Christopher Nolan's sci-fi thriller explores dreams, reality, and the limits of human consciousness.
+    </p>
 </body>
-
 </html>
